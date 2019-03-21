@@ -1,0 +1,30 @@
+<?php 
+$order = $block->getOrder();
+$block->getReferenceTable();
+?>
+<div class="checkout-success">
+
+	<table cellpadding="6" cellspacing="2" style="width: 350px; height: 55px; margin: 10px 0 2px 0;border: 1px solid #ddd">
+		<tr>
+			<td style="background-color: #ccc;color:#313131;text-align:center;" colspan="3"><?php echo __('Pay the following Multibanco reference at an ATM machine or Homebanking'); ?></td>
+		</tr>
+		<tr>
+			<td rowspan="4" style="width:110px;padding: 0px 5px 0px 5px;vertical-align: middle;"><img src="<?php echo $block->getViewFileUrl("Hipay_HipayMultibancoGateway::images/multibanco.jpg");?>" style="margin-bottom: 0px; margin-right: 0px;"/></td>
+			<td style="width:100px;"><?php echo __('ENTITY'); ?></td>
+			<td style="font-weight:bold;width:245px;"><?php echo $block->getMultibancoEntity(); ?></td>
+		</tr>
+		<tr>
+			<td><?php echo __('REFERENCE'); ?></td>
+			<td style="font-weight:bold;"><?php echo $block->getMultibancoReference(); ?></td>
+		</tr>
+		<tr>
+			<td><?php echo __('AMOUNT'); ?></td>
+			<td style="font-weight:bold;"><?php echo $block->getMultibancoAmount(); ?> &euro;</td>
+		</tr>
+		<tr>
+			<td><?php echo __('EXPIRY DATE'); ?></td>
+			<td style="font-weight:bold;"><?php echo $block->getMultibancoExpiryDate(); ?></td>
+		</tr>
+	</table>
+
+</div>
