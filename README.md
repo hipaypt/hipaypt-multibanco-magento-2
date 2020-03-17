@@ -2,7 +2,7 @@
 
 ## API credentials
 
-HiPay Comprafacil API production or sandbox account credentials for each currency:
+HiPay API production or sandbox account credentials for each currency:
    - HiPay Comprafacil merchant login
    - HiPay Comprafacil merchant password
    - HiPay Comprafacil Multibanco Entity

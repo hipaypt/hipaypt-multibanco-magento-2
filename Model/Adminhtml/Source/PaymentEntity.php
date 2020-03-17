@@ -13,7 +13,7 @@ class PaymentEntity implements \Magento\Framework\Option\ArrayInterface
     {
         return [
             [
-                'value' => "11249", 'label' => "11249" ],
+                'value' => "11249", 'label' => "11249 - 12101" ],
             [   'value' => "10241", 'label' => "10241 - 12029"   ]
         ];
     }

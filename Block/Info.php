@@ -1,22 +1,17 @@
 <?php
-/**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
 namespace Hipay\HipayMultibancoGateway\Block;
 
-use Magento\Framework\Phrase;
-use Magento\Payment\Block\ConfigurableInfo;
+use Magento\Framework\Registry;
 
-class Info extends ConfigurableInfo
+class Info extends \Magento\Payment\Block\Info
 {
-    protected function getLabel($field)
-    {
-        return __($field);
-    }
+    public $_template = 'Hipay_HipayMultibancoGateway::info/order_info.phtml';
 
-    protected function getValueView($field, $value)
+    public function getPaymentInfoData()
     {
-        return parent::getValueView($field, $value);
+        return $this->getInfo()->getAdditionalInformation();
     }
+    
+
+
 }
