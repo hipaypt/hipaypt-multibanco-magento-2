@@ -3,12 +3,14 @@
     "description": "Hipay Multibanco payment gateway for Magento 2",
     "minimum-stability": "dev",
     "type": "magento2-module",
-    "version": "100.0.0",
+    "version": "1.0.0",
     "license": [
         "Apache-2.0"
     ],
     "autoload": {
-        "files": [ "registration.php" ],
+        "files": [
+            "registration.php"
+        ],
         "psr-4": {
             "Hipay\\HipayMultibancoGateway\\": ""
         }
