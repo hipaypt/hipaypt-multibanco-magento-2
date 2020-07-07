@@ -9,7 +9,7 @@
         "magento/framework": "100.0.*",
         "magento/magento-composer-installer": "100.0.*"
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
     "type": "magento2-module",
     "version": "100.0.0",
     "license": [
