@@ -34,7 +34,7 @@ class AddExtraDataToTransport implements ObserverInterface
 		
 		$referenceTable = '<table cellpadding="6" cellspacing="2" style="width: 300px; height: 55px; margin: 10px 0 2px 0;border: 1px solid #ddd">
 			<tr>
-				<td style="background-color: #ccc;color:#313131;text-align:center;" colspan="3">'. __('Pay the following Multibanco reference at an ATM machine or Homebanking') . '</td>
+				<td style="background-color: #ccc;color:#313131;text-align:center;" colspan="3">'. __('Pay the following Multibanco reference at an ATM machine or Homebanking.') . '</td>
 			</tr>
 			<tr>
 				<td style="width:100px;">'. __('ENTITY') . '</td>

@@ -5,3 +5,7 @@
 "REFERENCE","REFERENCE"
 "AMOUNT","AMOUNT"
 "EXPIRY DATE","EXPIRY DATE"
+"Your order # is: ","Your order # is: "
+"You will receive an email with your order details.","You will receive an email with your order details."
+"This payment details are valid for the next 3 days. Your order will be canceled on the fourth day.","This payment details are valid for the next 3 days. Your order will be canceled on the fourth day."
+

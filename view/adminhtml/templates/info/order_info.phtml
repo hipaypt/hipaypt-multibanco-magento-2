@@ -1,6 +1,8 @@
 <?php
 $paymentData = $this->getPaymentInfoData();
-echo __('Multibanco');
+
+if (isset($paymentData['MB_Reference'])){
+	echo  "<p>" . __('Pay the following Multibanco reference at an ATM machine or Homebanking.') . "</p>";
 ?>
 	
 	<table cellpadding="6" cellspacing="2" style="width: 350px; height: 55px; margin: 10px 0 2px 0;border: 1px solid #ddd">
@@ -22,4 +24,8 @@ echo __('Multibanco');
 			<td style="font-weight:bold;padding: 0px 5px 0px 5px;"><?php echo $paymentData['MB_ExpiryDate'];?></td>
 		</tr>
 	</table>
+
+<?php
+}
+?>
 
